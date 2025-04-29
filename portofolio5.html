@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Idol kesayangan</title>
+	<link rel="stylesheet" href="bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+		body {
+			font-family: 'Inknut Antiqua', serif;
+			background-color: #fff0f6;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+		.project-container {
+			background-color: #fff;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+			border-radius: 20px;
+			overflow: hidden;
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #fde5f2;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+			border-bottom: 2px dashed #ffb6d9;
+		}
+		.breadcrumb a {
+			color: #d63384;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 38pt;
+			transform: translate(-50%, -50%);
+			color: #000000;
+			text-align: center;
+			text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+		}
+		.image-container {
+			position: relative;
+		}
+		nav ul {
+			list-style: none;
+			padding: 10px;
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			background-color: #ffe4fa;
+			margin: 0;
+			border-bottom: 2px solid #ffd3f7;
+		}
+		nav li {
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 14px;
+		}
+		nav a {
+			color: #ff69b4;
+			text-decoration: none;
+		}
+		nav a:hover {
+			text-decoration: underline;
+		}
+		.project h2 {
+			color: #d63384;
+		}
+		.project p, .project li {
+			line-height: 1.8;
+			font-size: 16px;
+		}
+		.project ul {
+			padding-left: 20px;
+		}
+		.project.blue {
+			background-color: #e7f9ff;
+		}
+		footer {
+			text-align: center;
+			padding: 30px;
+			background-color: #ffd1ec;
+			margin-top: 40px;
+		}
+		footer h2 {
+			color: #a50065;
+			font-size: 20px;
+		}
+		footer a {
+			color: #ff1493;
+			text-decoration: none;
+		}
+		footer a:hover {
+			text-decoration: underline;
+		}
+		
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgb(249, 20, 207);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: rgb(255, 15, 131);
+		}
+
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+
+		@media (max-width: 768px) {
+			.slider-slide img {
+				height: 300px;
+			}
+			.project-title {
+				font-size: 24pt;
+			}
+		}
+	</style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li>young</li>
+            <li>rich</li>
+            <li>tall</li>
+            <li>pretty</li>
+            <li><a href="https://x.com/anzanul" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="https://i.pinimg.com/736x/42/78/8e/42788ec0f7ad6707ab1fb61b149d7bf6.jpg" class="full-width-image" alt="seventeen sr">
+			<h1 class="project-title">idol<br>kesayangan aku cintaku</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="portofolio.html">Home</a> / idol sayang 
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>MARK LEE</h2>
+                        <p>
+                            Mark Lee adalah sosok yang selalu berhasil membuat aku kagum—bukan hanya karena bakatnya di atas panggung, tapi karena kepribadian tulus dan kerja kerasnya yang luar biasa. 
+                            Sebagai anggota dari banyak unit NCT dan juga SuperM, dia selalu memberi 100% dari dirinya dalam setiap penampilan. 
+                            Dia tidak pernah setengah-setengah, dan itulah yang membuatku merasa bahwa dia bukan hanya sekadar idola, tapi inspirasi hidup.
+                          </p>
+                        
+                          <p>
+                            Setiap kali melihat Mark tampil, aku merasa semangatku ikut tumbuh. 
+                            Entah itu dari lirik rap yang ditulisnya sendiri, cara dia membawa panggung dengan energinya, atau momen-momen kecil saat dia berbicara jujur di depan kamera—semuanya terasa dekat dan nyata. 
+                            Mark bukan hanya berbakat, tapi juga rendah hati, pintar, dan punya jiwa kepemimpinan yang tulus.
+                          </p>
+                        
+                          <p>
+                            Dari Mark aku belajar bahwa tidak apa-apa untuk mencoba banyak hal, bahwa keberhasilan bukan datang dari satu jalan saja. 
+                            Dia membuatku ingin terus berkembang, untuk berani bicara, untuk mencintai pekerjaan dengan sepenuh hati. 
+                            Bagi aku, Mark Lee bukan hanya seorang idola—dia adalah contoh nyata dari ketekunan, keberanian, dan keaslian.
+                          </p>
+                        
+                          <p>
+                            Dan mungkin yang paling membuatku terhubung dengan Mark adalah caranya mencintai pekerjaannya dan tetap jadi dirinya sendiri di tengah segala kesibukan dan tekanan. 
+                            Dia mengingatkanku bahwa menjadi diri sendiri adalah kekuatan terbesar.
+                          </p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>SEVENTEEN</h2>
+                        <p>
+                            SEVENTEEN bukan hanya grup idol bagiku—mereka adalah rumah, semangat, dan pelipur lara. 
+                            Dari 13 member dengan kepribadian yang unik dan penuh warna, aku merasa selalu ada satu bagian dari mereka yang mewakili perasaanku. 
+                            Baik itu semangat Jeonghan, kehangatan Joshua, ketulusan Woozi, kegigihan Hoshi, atau leadership S.Coups—setiap dari mereka membawa arti yang dalam.
+                          </p>
+                        
+                          <p>
+                            Hal yang paling aku kagumi dari SEVENTEEN adalah kekompakan dan kerja keras mereka. 
+                            Mereka dikenal sebagai self-producing idol group—menulis lagu sendiri, menyusun koreografi, dan memikirkan konsep bersama-sama. 
+                            Itu bukan hal yang mudah di industri yang serba instan. Tapi mereka tetap bertahan, tetap rendah hati, dan justru semakin kuat setiap tahunnya.
+                          </p>
+                        
+                          <p>
+                            Lagu-lagu SEVENTEEN sering menjadi pelipur laraku di saat-saat sulit. 
+                            Musik mereka tidak hanya catchy, tapi punya makna yang dalam—tentang mimpi, perjuangan, cinta, dan persahabatan. 
+                            Setiap kali merasa lelah atau kehilangan arah, aku bisa mendengarkan mereka dan merasa pulih kembali.
+                          </p>
+                        
+                          <p>
+                            Aku mencintai SEVENTEEN bukan karena mereka sempurna, tapi karena mereka menunjukkan bahwa proses itu penting. 
+                            Mereka membuatku ingin menjadi versi terbaik dari diriku sendiri, untuk terus berjuang dengan orang-orang yang aku sayangi, dan percaya bahwa kerja keras tidak akan pernah sia-sia.
+                          </p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Gallery</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="https://i.pinimg.com/736x/bd/12/c5/bd12c52ac41e87dbac32833436fd32d4.jpg" alt="Dashboard App">
+								</div>
+								<div class="slider-slide">
+									<img src="https://i.pinimg.com/736x/6e/16/56/6e1656ce94ca295a6fddbb71d062a959.jpg" alt="Cosmetics Project">
+								</div>
+								<div class="slider-slide">
+									<img src="https://i.pinimg.com/736x/51/53/ec/5153ec44cd2df74bbe0b4fc0d71cf041.jpg" alt="iPad App">
+								</div>
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+    <footer id="contact">
+        <h2>Any Questions?<br>Find me here 💌<br><a href="mailto:marifahmuwafiqotul@gmail.com">marifahmuwafiqotul@gmail.com</a></h2>
+        <p>Designed & Developed with 💖 by afiq 2025</p>
+    </footer>
+</body>
+</html>

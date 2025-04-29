@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pengalaman Lainnya</title>
+	<link rel="stylesheet" href="bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+		body {
+			font-family: 'Inknut Antiqua', serif;
+			background-color: #fff0f6;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+		.project-container {
+			background-color: #ffffff;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+			border-radius: 20px;
+			overflow: hidden;
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #fde5f2;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+			border-bottom: 2px dashed #ffb6d9;
+		}
+		.breadcrumb a {
+			color: #d63384;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 38pt;
+			transform: translate(-50%, -50%);
+			color: #ff90ed;
+			text-align: center;
+			text-shadow: 2px 2px 5px rgb(0, 0, 0);
+		}
+		.image-container {
+			position: relative;
+		}
+		nav ul {
+			list-style: none;
+			padding: 10px;
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			background-color: #ffe4fa;
+			margin: 0;
+			border-bottom: 2px solid #ffd3f7;
+		}
+		nav li {
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 14px;
+		}
+		nav a {
+			color: #ff69b4;
+			text-decoration: none;
+		}
+		nav a:hover {
+			text-decoration: underline;
+		}
+		.project h2 {
+			color: #d63384;
+		}
+		.project p, .project li {
+			line-height: 1.8;
+			font-size: 16px;
+		}
+		.project ul {
+			padding-left: 20px;
+		}
+		.project.blue {
+			background-color: #e7f9ff;
+		}
+		footer {
+			text-align: center;
+			padding: 30px;
+			background-color: #ffd1ec;
+			margin-top: 40px;
+		}
+		footer h2 {
+			color: #a50065;
+			font-size: 20px;
+		}
+		footer a {
+			color: #ff1493;
+			text-decoration: none;
+		}
+		footer a:hover {
+			text-decoration: underline;
+		}
+		
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgb(255, 0, 149);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: rgb(255, 15, 131);
+		}
+
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+
+		@media (max-width: 768px) {
+			.slider-slide img {
+				height: 300px;
+			}
+			.project-title {
+				font-size: 24pt;
+			}
+		}
+	</style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li>young</li>
+            <li>rich</li>
+            <li>tall</li>
+            <li>pretty</li>
+            <li><a href="https://x.com/anzanul" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="https://i.pinimg.com/736x/f0/8e/66/f08e66d39e5a1795558c4117a4c608a5.jpg" class="full-width-image" alt="seventeen sr">
+			<h1 class="project-title">Pengalaman<br>menarik lainnya</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="../portofolio.html">Home</a> / Biodata 
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Sebagai Guru Les Matematika sekolah dasar 1-3</h2>
+                        <p>
+                            Menjadi guru les matematika untuk anak-anak kelas 1 sampai 3 SD adalah pengalaman yang membuka mata dan hati saya. 
+                            Saya bertanggung jawab mengajarkan konsep dasar matematika seperti penjumlahan, pengurangan, perkalian, pembagian, hingga logika angka secara perlahan dan menyenangkan. 
+                            Tidak hanya mengajar, saya juga harus membangun suasana belajar yang ramah dan nyaman, agar anak-anak tidak merasa takut dengan matematika.
+                          </p>
+                        
+                          <p>
+                            Setiap pertemuan adalah tantangan baru, karena karakter dan kemampuan setiap anak berbeda. 
+                            Saya belajar untuk lebih sabar, kreatif, dan mampu menyampaikan materi dengan cara yang sederhana namun efektif. 
+                            Saya juga terbiasa membuat lembar kerja, kuis interaktif, serta metode belajar visual agar siswa lebih mudah memahami.
+                          </p>
+                        
+                          <p>
+                            Dari pengalaman ini, saya menyadari bahwa komunikasi, empati, dan pendekatan personal sangat penting dalam dunia pendidikan. 
+                            Hal yang bisa saya tingkatkan adalah kemampuan membuat materi pembelajaran digital agar lebih modern dan menarik, serta pendekatan psikologis untuk mengenali cara belajar tiap anak.
+                          </p>
+                        
+                          <p>
+                            Ke depannya, pengalaman ini menjadi bekal besar dalam bidang apapun yang saya tekuni. 
+                            Karena mengajar anak-anak membentuk kepribadian yang sabar, tekun, komunikatif, serta bertanggung jawab—kualitas yang dibutuhkan dalam dunia kerja dan kehidupan.
+                          </p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Elitery - DevOps dan Solution Architect</h2>
+                        <p>
+                            Saya berkesempatan menjalani magang selama 3 bulan di <strong>Elitery</strong>, sebuah perusahaan yang bergerak di bidang solusi IT berbasis cloud. 
+                            Dalam magang ini, saya mengisi dua peran penting: sebagai <em>Solution Architect</em> dan <em>DevOps Engineer</em>. 
+                            Tugas utama saya adalah merancang dan membangun solusi cloud yang sesuai dengan kebutuhan klien, serta mengatur alur kerja CI/CD menggunakan berbagai tools seperti GitLab CI, Jenkins, dan Terraform.
+                          </p>
+                        
+                          <p>
+                            Saya terlibat langsung dalam proses deployment aplikasi di lingkungan cloud (seperti AWS dan GCP), mengatur infrastruktur dengan pendekatan <em>Infrastructure as Code</em> (IaC), serta membantu tim dalam optimasi sistem monitoring dan logging. 
+                            Dalam posisi sebagai Solution Architect, saya juga ikut menganalisis kebutuhan teknis dan menyusun arsitektur sistem yang scalable dan cost-efficient.
+                          </p>
+                        
+                          <p>
+                            Hal yang dapat saya tingkatkan ke depannya adalah pendalaman pada aspek keamanan cloud (Cloud Security), pengelolaan biaya secara lebih efisien (Cost Optimization), serta kemampuan presentasi teknis kepada stakeholder non-teknis. 
+                            Selain itu, saya juga ingin memperdalam penggunaan Kubernetes dan container orchestration.
+                          </p>
+                        
+                          <p>
+                            Pengalaman ini sangat relevan dengan masa depan saya di dunia teknologi. 
+                            Saya menjadi lebih percaya diri menghadapi masalah nyata di dunia kerja, memahami pentingnya kolaborasi lintas tim, dan punya bekal praktik nyata sebagai seorang cloud engineer profesional. 
+                            Ini adalah langkah awal yang kuat untuk karier saya di industri cloud dan DevOps.
+                          </p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Gallery</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="https://i.pinimg.com/736x/c7/df/ca/c7dfcaa5d3788b918d80ef3237291f10.jpg" alt="Dashboard App">
+								</div>
+								<div class="slider-slide">
+									<img src="https://i.pinimg.com/736x/69/5b/2b/695b2b711aca42ae973b0c235ea521b1.jpg" alt="Cosmetics Project">
+								</div>
+								<div class="slider-slide">
+									<img src="https://i.pinimg.com/736x/ef/1b/02/ef1b02ada8328e766fd138167cca5862.jpg" alt="iPad App">
+								</div>
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+    <footer id="contact">
+        <h2>Any Questions?<br>Find me here 💌<br><a href="mailto:marifahmuwafiqotul@gmail.com">marifahmuwafiqotul@gmail.com</a></h2>
+        <p>Designed & Developed with 💖 by afiq 2025</p>
+    </footer>
+</body>
+</html>

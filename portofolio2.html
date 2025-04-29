@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Biodata afiq</title>
+	<link rel="stylesheet" href="bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		body {
+			font-family: 'Inknut Antiqua', serif;
+		}
+		.project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 50pt;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+
+
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+
+		@media (max-width: 768px) {
+			.slider-slide img {
+				height: 300px;
+			}
+			.project-title {
+				font-size: 24pt;
+			}
+		}
+	</style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li>young</li>
+            <li>rich</li>
+            <li>tall</li>
+            <li>pretty</li>
+            <li><a href="https://x.com/anzanul" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="000pict.jpg" class="full-width-image" alt="seventeen sr">
+			<h1 class="project-title">Biodata<br>Muwafiqotul Ma'rifah</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="portofolio.html">Home</a> / Biodata 
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Perkenalan Singkat</h2>
+						<p>Halo perkenalkan Nama lengkap saya MUWAFIQOTUL MA'RIFAH dengan NIM 236250006. Saya adalah seorang Mahasiswa jurusan Informatika di Universitas Islam Negeri Datokarama Palu yang sekarang sedang menjalani semester 4 yang luar biasa mashaAllah. Ketertarikan saya dalam bidang teknologi bukan tanpa alasan, saya sangat menyukai membuat rancangan sebuah aplikasi unik dengan nuansa warna dan fitur yang kreatif. Tentunya untuk mewujudkan itu semua saya harus belajar di jurusan informatika. Jujur, saya sangat menikmati belajar di sini karena ini adalah salah satu jurusan yang saya minati.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue" id="experience">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Semangat</h2>
+						<p>Semangat Cerah untuk masa depan yang Cerah:</p>
+						<ul>
+							<li>Halo, perkenalkan nama saya [Nama Anda]. Saya adalah pribadi yang dipenuhi semangat dan ambisi besar untuk meraih kesuksesan. Sejak awal, saya percaya bahwa keberhasilan lahir dari kerja keras, tekad yang kuat, serta keinginan untuk terus belajar dan berkembang.</li>
+							<li>Dalam perjalanan saya mewujudkan cita-cita, saya telah mengambil berbagai langkah konkret, antara lain:
+								<ul>
+									<li>Melakukan wawancara pengguna dengan lebih dari 250 peserta dari demografi target.</li>
+									<li>Melakukan analisis persaingan komprehensif terhadap 10 merek kecantikan teratas.</li>
+									<li>Memetakan tren preferensi konsumen kecantikan dan kesehatan yang sedang berkembang.</li>
+									<li>Menyusun profil psikologis segmen konsumen target untuk memahami kebutuhan mereka secara mendalam.</li>
+								</ul>
+							</li>
+							<li>Semua ini saya lakukan sebagai bagian dari komitmen saya untuk membangun fondasi yang kuat dalam bidang yang saya tekuni. Bagi saya, setiap tantangan adalah peluang untuk bertumbuh, dan setiap pengalaman adalah bagian penting dari perjalanan menuju impian besar saya.</li>
+							<li>Saya percaya, dengan dedikasi, konsistensi, dan keberanian untuk terus melangkah maju, saya akan mampu meraih cita-cita saya dan memberikan kontribusi nyata dalam dunia yang saya cintai.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Berubah untuk Masa Depan</h2>
+						<p>Menciptakan ruang hidup sehat dan percaya diri:</p>
+						<ul>
+							<li>Dulu, saya sering merasa insecure terhadap banyak hal dalam diri saya, mulai dari wajah, bentuk badan, hingga kemampuan intelektual saya.</li>
+							<li>Rasa tidak percaya diri itu sering membuat saya merasa kurang pantas, membandingkan diri dengan orang lain, dan meragukan potensi yang saya miliki.</li>
+							<li>Namun, seiring waktu, saya belajar untuk lebih menerima dan mencintai diri sendiri. Saya menyadari bahwa setiap orang punya keunikan dan perjalanan hidupnya masing-masing.</li>
+							<li>Saya mulai fokus pada hal-hal positif dalam diri saya, mensyukuri apa yang saya punya, dan bekerja keras untuk menjadi versi terbaik dari diri saya sendiri.</li>
+							<li>Sekarang, saya mampu bangkit dari rasa insecure tersebut. Saya lebih percaya diri, lebih bersyukur, dan lebih berani untuk mengejar cita-cita tanpa membatasi diri karena ketakutan atau keraguan.</li>
+						</ul>					
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue" id="works">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Fokus Kehidupan</h2>
+						<p>Fokus lebih lama dan tenang:</p>
+						<ul>
+							<li>Saya adalah seorang perempuan yang sejak dulu memiliki tantangan besar dalam hal menjaga fokus.</li>
+							<li>Sering kali, saya merasa mudah teralihkan perhatian dan kesulitan untuk menyelesaikan satu hal dengan konsentrasi penuh.</li>
+							<li>Namun, di balik semua itu, saya memiliki motivasi kuat untuk sukses dan meraih cita-cita saya.</li>
+							<li>Motivasi itulah yang membuat saya terus belajar, berusaha, dan membentuk kebiasaan baru agar bisa lebih fokus dalam setiap langkah yang saya ambil.</li>
+							<li>Saya percaya bahwa dengan tekad, latihan, dan komitmen yang kuat, saya bisa mengubah tantangan ini menjadi kekuatan untuk mencapai kesuksesan yang saya impikan.</li>
+						</ul>				
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Gallery</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="1pict.jpg" alt="Dashboard App">
+								</div>
+								<div class="slider-slide">
+									<img src="2pict.jpg" alt="Cosmetics Project">
+								</div>
+								<div class="slider-slide">
+									<img src="3pict.jpg" alt="iPad App">
+								</div>
+							</div>
+
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+    <footer id="contact">
+        <h2>Any Questions?<br>Find me here 💌<br><a href="mailto:marifahmuwafiqotul@gmail.com">marifahmuwafiqotul@gmail.com</a></h2>
+        <p>Designed & Developed with 💖 by afiq 2025</p>
+    </footer>
+</body>
+</html>

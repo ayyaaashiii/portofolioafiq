@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>User Experience Design for Dashboard App</title>
+	<link rel="stylesheet" href="bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+		body {
+			font-family: 'Inknut Antiqua', serif;
+			background-color: #fff0f6;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+		.project-container {
+			background-color: #fff;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+			border-radius: 20px;
+			overflow: hidden;
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #fde5f2;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+			border-bottom: 2px dashed #ffb6d9;
+		}
+		.breadcrumb a {
+			color: #d63384;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 38pt;
+			transform: translate(-50%, -50%);
+			color: #ff90ed;
+			text-align: center;
+			text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+		}
+		.image-container {
+			position: relative;
+		}
+		nav ul {
+			list-style: none;
+			padding: 10px;
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			background-color: #ffe4fa;
+			margin: 0;
+			border-bottom: 2px solid #ffd3f7;
+		}
+		nav li {
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 14px;
+		}
+		nav a {
+			color: #ff69b4;
+			text-decoration: none;
+		}
+		nav a:hover {
+			text-decoration: underline;
+		}
+		.project h2 {
+			color: #d63384;
+		}
+		.project p, .project li {
+			line-height: 1.8;
+			font-size: 16px;
+		}
+		.project ul {
+			padding-left: 20px;
+		}
+		.project.blue {
+			background-color: #e7f9ff;
+		}
+		footer {
+			text-align: center;
+			padding: 30px;
+			background-color: #ffd1ec;
+			margin-top: 40px;
+		}
+		footer h2 {
+			color: #a50065;
+			font-size: 20px;
+		}
+		footer a {
+			color: #ff1493;
+			text-decoration: none;
+		}
+		footer a:hover {
+			text-decoration: underline;
+		}
+		
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+
+		@media (max-width: 768px) {
+			.slider-slide img {
+				height: 300px;
+			}
+			.project-title {
+				font-size: 24pt;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="../portofolio.html#contact">contact</a></li>
+			<li>works</li>
+			<li>expertience</li>
+			<li class="empty"></li>
+			<li>behance</li>
+			<li><a href="https://x.com/anzanul" target="_blank">twitter</a></li>
+			<li>linkedin</li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="anu.jpeg" class="full-width-image" alt="Dashboard App UX Design Project">
+			<h1 class="project-title">pengalaman<br>Organisasi</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="../portofolio.html">Home</a> / Pengalaman Organisasi
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>PALANG MERAH REMAJA</h2>
+						<p>
+                            Menjadi bagian dari organisasi <strong>PMR (Palang Merah Remaja)</strong> bukan hanya tentang memakai seragam dan ikut kegiatan sosial, tetapi jauh lebih dalam dari itu. 
+                            PMR adalah wadah untuk belajar menjadi manusia yang peduli, tanggap, dan bertanggung jawab terhadap sesama. 
+                            Dalam setiap kegiatan PMR, mulai dari pelatihan pertolongan pertama, donor darah, hingga aksi kemanusiaan di lapangan, aku belajar arti kepedulian yang sesungguhnya. 
+                            Aku belajar untuk tidak hanya melihat dunia dari sisi nyaman dan pribadi, tapi juga dari sisi orang lain yang mungkin sedang terluka, sakit, atau membutuhkan uluran tangan.
+                          </p>
+                        
+                          <p>
+                            Ke depannya, pengalaman di PMR akan sangat berguna bagi diriku, baik dalam kehidupan sehari-hari maupun dalam dunia kerja. 
+                            PMR mengajarkan aku keterampilan dasar medis yang bisa menyelamatkan nyawa seseorang—dan mungkin suatu hari nanti aku bisa menjadi orang yang berada di tempat yang tepat pada waktu yang tepat, 
+                            menolong seseorang yang butuh pertolongan darurat. Selain itu, aku juga belajar tentang kerja sama tim, kepemimpinan, komunikasi yang efektif, dan manajemen emosi dalam situasi genting. 
+                            Semua ini adalah bekal yang sangat berharga untuk masa depan, apapun profesi yang aku pilih nantinya.
+                          </p>
+                        
+                          <p>
+                            PMR juga membentuk karakter. Aku jadi lebih sabar, lebih peka, dan lebih menghargai hidup. Aku juga lebih percaya diri karena merasa punya peran dalam masyarakat, sekecil apapun itu. 
+                            Menjadi relawan bukan pekerjaan ringan, tapi kepuasan batin yang didapatkan jauh lebih besar dari apapun. 
+                            Dan dari situ, aku juga belajar tentang rasa syukur—melihat orang lain yang tidak seberuntung aku membuatku lebih menghargai apa yang kumiliki sekarang.
+                          </p>
+                        
+                          <p>
+                            Bergabung dengan PMR adalah pilihan yang akan selalu aku banggakan. Di dalamnya aku tidak hanya menemukan pengalaman, tetapi juga keluarga baru, nilai-nilai kemanusiaan, dan tujuan hidup yang lebih mulia. 
+                            PMR bukan hanya organisasi, tapi tempatku bertumbuh menjadi manusia yang lebih baik.
+                          </p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>HIMA IF</h2>
+						<p><strong>HIMPUNAN MAHASISWA INFORMATIKA</strong></p>
+						<ul>
+							<li>
+                                Bergabung dengan Himpunan Mahasiswa Informatika memberikan aku lebih dari sekadar pengalaman organisasi—ini adalah tempat aku bertumbuh sebagai calon profesional IT. 
+                                Di himpunan, aku belajar bagaimana dunia teknologi berkembang pesat dan bagaimana aku bisa berkontribusi di dalamnya. 
+                                Lewat seminar, workshop, coding bootcamp, dan kolaborasi proyek, aku jadi lebih paham arah karier di bidang informatika.
+                              </li>
+                            
+                              <li>
+                                Selain sisi teknis, himpunan juga melatih kemampuan organisasi, komunikasi, dan kepemimpinan. 
+                                Aku belajar membuat event, menyusun proposal, membangun relasi, dan berdiskusi secara profesional. 
+                                Semua ini akan sangat bermanfaat ketika aku masuk ke dunia kerja, karena seorang programmer atau IT specialist tidak hanya butuh skill coding, tapi juga kemampuan bekerja sama.
+                              </li>
+                            
+                              <li>
+                                Himpunan juga membuka peluang jejaring. Bertemu senior, alumni, bahkan praktisi industri yang memberi wawasan dan inspirasi. 
+                                Ini memperluas pandanganku dan memberiku motivasi untuk terus belajar dan tidak cepat puas.
+                              </li>
+                            
+                              <li>
+                                Menjadi bagian dari Himpunan Mahasiswa Informatika bukan hanya tentang identitas akademik, tetapi tentang persiapan mental dan kompetensi untuk menjadi garda depan dunia digital masa depan.
+                              </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>PRAMUKA</h2>
+						<p><strong>PRAJA MUDA KARANA</strong></p>
+						<ul>
+                            <li>
+                                Pramuka bukan hanya kegiatan baris-berbaris atau berkemah di alam bebas, tapi lebih dari itu—Pramuka adalah sekolah kehidupan. 
+                                Di sini aku belajar mandiri, disiplin, bertanggung jawab, serta mencintai alam dan sesama manusia. 
+                                Pramuka membentukku menjadi pribadi yang tidak mudah menyerah, mampu bertahan dalam kondisi sulit, dan selalu siap membantu siapa pun yang membutuhkan.
+                              </li>
+                            
+                              <li>
+                                Ke depannya, nilai-nilai yang kupelajari dalam Pramuka akan menjadi bekal berharga dalam menghadapi dunia nyata. 
+                                Aku belajar bekerja dalam tim, menyelesaikan masalah dengan cepat, dan menjadi pemimpin yang tangguh. 
+                                Bahkan dalam dunia kerja, keterampilan soft skill seperti ini sangat dibutuhkan. 
+                                Pramuka melatihku untuk berpikir logis, kreatif, dan adaptif—tiga hal penting untuk meraih kesuksesan di masa depan.
+                              </li>
+                            
+                              <li>
+                                Aku juga belajar mencintai lingkungan dan hidup sederhana. Banyak hal kecil dalam Pramuka yang berdampak besar bagi cara pandangku terhadap hidup. 
+                                Menolong orang lain menjadi kebiasaan, bukan beban. 
+                                Semua ini membentukku menjadi manusia yang lebih kuat secara fisik, mental, dan emosional.
+                              </li>
+                            
+                              <li>
+                                Aku bangga menjadi bagian dari gerakan Pramuka. Ini bukan sekadar organisasi, tapi jalan hidup yang akan selalu aku bawa ke mana pun aku melangkah.
+                              </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>REMAJA MASJID</h2>
+                        <p>
+                            Remaja Masjid adalah tempatku belajar menjadi pribadi yang berakhlak, bertanggung jawab, dan dekat dengan nilai-nilai kebaikan. 
+                            Di lingkungan ini, aku belajar bahwa menjadi muda tidak menghalangi untuk aktif dalam kegiatan ibadah, sosial, dan pembangunan spiritual masyarakat. 
+                            Aku bukan hanya datang untuk shalat berjamaah, tetapi juga ikut andil dalam kegiatan seperti pengajian, bakti sosial, hingga program keagamaan yang bermanfaat.
+                          </p>
+                        
+                          <p>
+                            Remaja Masjid menumbuhkan rasa cinta pada kebaikan dan semangat untuk terus memperbaiki diri. 
+                            Ini bukan sekadar organisasi, tapi wadah pembinaan jiwa yang sangat penting di usia muda. 
+                            Ketika banyak yang larut dalam dunia digital dan pergaulan bebas, aku merasa bersyukur bisa berada di tempat yang membimbing ke arah yang benar.
+                          </p>
+                        
+                          <p>
+                            Ke depannya, pembiasaan berbuat baik dan hidup berdasarkan nilai-nilai agama akan menjadi dasar dalam membuat keputusan-keputusan penting dalam hidup. 
+                            Aku jadi punya pondasi moral yang kuat dan jiwa sosial yang tinggi. 
+                            Tidak hanya menjadi manusia cerdas, tapi juga bermanfaat bagi lingkungan dan membawa ketenangan bagi sekitarku.
+                          </p>
+                        
+                          <p>
+                            Aku bangga menjadi bagian dari Remaja Masjid, karena di sini aku belajar menjadi versi terbaik dari diriku—bukan hanya untuk dunia, tapi juga untuk akhirat.
+                          </p>
+					</div>
+				</div>
+			</div>
+		</section>
+        
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>KARANG TARUNA</h2>
+                        <p>
+                            Karang Taruna adalah wadah pemuda untuk berperan aktif dalam pembangunan sosial kemasyarakatan. 
+                            Di sini aku belajar bahwa perubahan di lingkungan itu dimulai dari langkah-langkah kecil yang dilakukan dengan komitmen tinggi. 
+                            Aku tidak hanya menjadi penonton atas permasalahan di masyarakat, tapi ikut hadir untuk membantu mencari solusi bersama.
+                          </p>
+                        
+                          <p>
+                            Lewat Karang Taruna, aku belajar menjadi pemuda yang peka terhadap keadaan sekitar, mau bekerja sama, dan tidak hanya mengandalkan pemerintah dalam menyelesaikan masalah sosial. 
+                            Aku terlibat dalam kegiatan seperti gotong royong, pelatihan wirausaha, pengembangan pemuda, hingga aksi sosial di masyarakat.
+                          </p>
+                        
+                          <p>
+                            Karang Taruna juga melatih kepemimpinan. Mengelola program kerja, berbicara di depan publik, merancang kegiatan produktif—semua itu adalah latihan nyata untuk menghadapi dunia profesional dan sosial di masa depan. 
+                            Aku belajar bagaimana menjadi pemuda yang tidak hanya cerdas secara intelektual, tapi juga dewasa secara emosional dan sosial.
+                          </p>
+                        
+                          <p>
+                            Bergabung dengan Karang Taruna membuatku sadar bahwa setiap orang bisa punya peran, sekecil apapun itu, dalam membangun masyarakat yang lebih baik. 
+                            Dan aku ingin menjadi bagian dari perubahan itu, mulai dari lingkungan tempat tinggalku sendiri.
+                          </p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Gallery</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="https://i.pinimg.com/736x/91/f7/77/91f7774e54709bcf46937c926f00a74f.jpg" alt="PMR">
+								</div>
+								<div class="slider-slide">
+									<img src="https://i.pinimg.com/736x/4a/d0/3e/4ad03e71c9ecc40eca21c206f1f009cf.jpg" alt="pramuka">
+								</div>
+								<div class="slider-slide">
+									<img src="https://i.pinimg.com/736x/07/5a/e6/075ae60207ef4b8e7a7945557bb7b523.jpg" alt="himpunan mahasiswa informatika">
+								</div>
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+    <footer id="contact">
+        <h2>Any Questions?<br>Find me here 💌<br><a href="mailto:marifahmuwafiqotul@gmail.com">marifahmuwafiqotul@gmail.com</a></h2>
+        <p>Designed & Developed with 💖 by afiq 2025</p>
+    </footer>
+</body>
+</html>
